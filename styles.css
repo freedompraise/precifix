@@ -96,8 +96,8 @@ body {
   height: 100%;
   background: linear-gradient(
     -30deg,
-    rgba(0, 46, 90, 1) 45%,
-    rgba(250, 169, 22, 1) 100%
+    rgba(0, 46, 90, 0.8) 45%,
+    rgba(250, 169, 22, 0.6) 100%
   );
   z-index: -1;
 }
@@ -105,8 +105,10 @@ body {
 .hero-content {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 160px;
+  padding: 0 260px 0 60px;
   color: #ffffff;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-title {
@@ -115,6 +117,7 @@ body {
   line-height: 1.21;
   margin-bottom: 14px;
   max-width: 542px;
+  margin-top: 50px;
 }
 
 .hero-description {
@@ -135,6 +138,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 20px;
 }
 
 .cta-button:hover {
@@ -548,6 +552,7 @@ body {
 
   .hero-content {
     padding: 0 20px;
+    text-align: left;
   }
 
   .hero-title {
